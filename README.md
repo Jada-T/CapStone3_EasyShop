@@ -15,3 +15,4 @@
 * ![Screenshot 2023-06-30 100431 (phase 2)](https://github.com/Jada-T/CapStone3_EasyShop/assets/130481616/b2ae8a74-10b5-40f6-866a-9c1298302204)
 # My Reflection
 *lots of ups & downs, it wasnt bad but I feel like I should have been organized way more. If I was given more time I would try to finsh the project and I would definitely finish my readme & organize my project way more than what it is.
+
