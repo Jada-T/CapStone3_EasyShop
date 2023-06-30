@@ -9,6 +9,7 @@ import org.yearup.models.Product;
 import org.yearup.data.ProductDao;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -30,7 +31,7 @@ public class ProductsController
                                 @RequestParam(name="minPrice", required = false) BigDecimal minPrice,
                                 @RequestParam(name="maxPrice", required = false) BigDecimal maxPrice,
                                 @RequestParam(name="color", required = false) String color
-                                )
+    )
     {
         try
         {
@@ -77,16 +78,17 @@ public class ProductsController
 
     @PutMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public void updateProduct(@PathVariable int id, @RequestBody Product product)
-    {
-        try
-        {
-            productDao.create(product);
-        }
-        catch(Exception ex)
-        {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
-        }
+
+    public HashMap<String, String> updateProduct(@PathVariable int id, @RequestBody Product product){
+        productDao.update(id, product);
+
+        HashMap<String, String> response = new HashMap<>();
+
+        response.put("Status", "Successful");
+        response.put("Message", "Product Updated Successfully");
+
+        return response;
+
     }
 
     @DeleteMapping("{id}")
@@ -108,3 +110,15 @@ public class ProductsController
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
