@@ -1,5 +1,5 @@
 # CapStone3_EasyShop
-Features
+# Features
 Bug Fixing: 
 
 Used the crud operation: creating, reading, updating, deleting products and categories.
