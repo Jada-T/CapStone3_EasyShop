@@ -1,6 +1,6 @@
 # CapStone3_EasyShop
 # Features 
-* Bug Fixing: This prjoject includes bug fixing.
+* Bug Fixing
 * Frontend Interface
 # Technologies Used 
 * Programming Language: Java
