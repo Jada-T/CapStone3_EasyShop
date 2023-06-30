@@ -1,6 +1,6 @@
 # CapStone3_EasyShop
-# Features
-Bug Fixing: 
+# Features 
+  Bug Fixing: This prjoject includes bug fixing.
 
 Used the crud operation: creating, reading, updating, deleting products and categories.
 provide methods for performing CRUD (Create, Read, Update, Delete) operations related to categories in the MySQL database. It encapsulates the database interaction logic and provides a convenient interface for other parts of the application to work with categories in the database.
